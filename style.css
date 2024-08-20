@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-primario:#E5E5E5;
+    --color-secundario:#f6f6f6;
+    --color-terciario:#0A3871;
+    --color-cuaternario:#D8DFE8;
+    --color-hover-2:#d4d2d2;
+    --color-hover: #6287b3;
+
+    --fuente-monserrat:"montserrat", sans-serif;
+    --fuente-krona:"Krona One", sans-serif;
+    --fuente-inter:"Inter", sans-serif;
+}
+
+* {
+    background-color: var(--color-primario);
+    font-family: var(--fuente-inter);
+    padding: 0px;
+    margin:0px;
+}
+
+body {
+    height: 95vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    height: 95%;
+    margin-left: 6rem;
+    padding: 1rem 1rem 0px 0px;
+}
+
+.container__izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-right: 80px;
+    justify-content:space-between;
+}
+
+.container__izquierda__text {
+    border: none;
+    font-family: var(--fuente-inter);
+
+}
+
+.container__izquierda__buttons {
+    text-align: center;
+    gap: 24px;
+    display: flex;
+}
+
+.container__izquierda__button__encriptar {
+    background-color: var(--color-terciario);
+    color: var(--color-cuaternario);
+    border-radius: 1.5rem;
+    border: 2px solid  var(--color-terciario);
+    padding: 1rem 2rem;
+    width: 20rem;
+    cursor: pointer;
+}
+
+.container__izquierda__button__encriptar:hover{
+    background-color: var(--color-hover-2);
+    color: var(--color-terciario);
+    border: 2px solid var(--color-terciario)
+    }
+
+
+.container__izquierda__button__desencriptar {
+    background-color: var(--color-cuaternario);
+    color: var(--color-terciario);
+    border-radius: 1.5rem;
+    border: 2px solid  var(--color-terciario);
+    padding: 1rem 2rem;
+    width: 20rem;
+    cursor: pointer;
+}
+
+.container__izquierda__button__desencriptar:hover{
+    background-color: var(--color-hover);
+    color: var(--color-primario);
+    border: 2px solid var(--color-hover)
+}
+
+.container__derecha {
+    background-color:var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    border-radius: 2rem;
+    width: 80%;
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container__derecha__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-secundario);
+}
+
+
+.container__derecha__imagen{
+    width: 80%;
+    background-color: var(--color-secundario);
+    margin: 2rem 0rem 0rem;
+}
+
+.container__derecha__msj {
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--color-secundario);
+}
+
+.container__derecha__button {
+    text-align: center;
+    gap: 24px;
+    display: flex;
+    background-color: var(--color-secundario)
+}
+
+.container__derecha__button__copiar {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    border-radius: 1.5rem;
+    border: 2px solid  var(--color-terciario);
+    padding: 1rem 2rem;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.container__derecha__button__copiar:hover {
+background-color: var(--color-hover);
+color: var(--color-primario);
+border: 2px solid var(--color-hover)
+}
+
+
+.footer {
+    text-align: center;
+    margin: 1rem 0 0 0;
+    color:var(--color-primario);
+    font-family:'Courier New', Courier, monospace;
+    background-color: var(--color-terciario);
+    bottom:0px;
+    right:0px;
+    left:0px;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido {
+        width: fit-content;
+    }
+}

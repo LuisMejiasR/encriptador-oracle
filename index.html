@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="container__izquierda">
+            <textarea name="textarea" id="valorUsuario" class="container__izquierda__text" placeholder="Ingrese el texto aqui" value="" rows="10" cols="50">
+            </textarea>
+            <div class="container__izquierda__buttons">
+                <button onclick="encriptar();" class="container__izquierda__button__encriptar" >
+                    Encriptar
+                </button>
+                <button onclick="desencriptar();" class="container__izquierda__button__desencriptar">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section class="container__derecha">
+            <div class="container__derecha__contenido">
+                <img src="./Muñeco.png" alt="Logo de muñeca" class="container__derecha__imagen" id="imagen1">
+                <p class="container__derecha__msj" id="textoProcesado">
+                    Ningún mensaje fue encontrado
+                </p>
+            </div>
+            <div class="container__derecha__button" >
+                <button onclick="copiar();" class="container__derecha__button__copiar" id="botonCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">Desarrollado por Alfredo Mejias</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
